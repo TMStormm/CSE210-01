@@ -37,14 +37,16 @@ def draw(game):
     return True
 
 def winner(game):
-    return (game[0] == game[1] == game[2] or
-            game[3] == game[4] == game[5] or
-            game[6] == game[7] == game[8] or
-            game[0] == game[3] == game[6] or
-            game[1] == game[4] == game[7] or
-            game[2] == game[5] == game[8] or
-            game[0] == game[4] == game[8] or
-            game[2] == game[4] == game[6])
+    return (game[0] == game[1] == game[2] == game[3] or
+            game[4] == game[5] == game[6] == game[7] or
+            game[8] == game[9] == game[10] == game[11] or
+            game[12] == game[13] == game[14] == game[15] or
+            game[0] == game[4] == game[8] == game[12] or
+            game[1] == game[5] == game[9] == game[13] or
+            game[2] == game[6] == game[10] == game[14] or
+            game[3] == game[7] == game[11] == game[15] or
+            game[0] == game[5] == game[10] == game[15] or
+            game[3] == game[6] == game[9] == game[12])
 
 def player_move(player, game):
     print()
